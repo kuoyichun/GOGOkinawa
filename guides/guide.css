@@ -156,3 +156,17 @@ a:focus-visible{outline:3px solid var(--lagoon);outline-offset:2px}
 .mini i{font-style:normal;font-size:11.5px;font-weight:900;color:var(--lagoon);padding-top:1px}
 .check .mini b,.check small b{display:inline;font-size:inherit;color:var(--ink)}
 .check .fine{margin:6px 14px 12px 46px;font-size:12px;color:var(--ink-soft);line-height:1.55}
+
+/* App 下載 */
+.dl{margin-top:10px;background:var(--paper-2);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.dl-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 12px;border-top:1px solid var(--line)}
+.dl-row:first-child{border-top:0}
+.dl-t{flex:1 1 180px;min-width:0}
+.dl-t b{display:block;font-size:15px;font-weight:900}
+.dl-t small{display:block;font-size:12.5px;color:var(--ink-soft);line-height:1.45}
+.dl-b{display:flex;gap:6px;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;border:0;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:900;color:#fff;background:var(--ink);white-space:nowrap}
+.store.play{background:#1E6B4F}
+.store.web{background:var(--paper);color:var(--ink);border:1.5px solid var(--ink);padding:4.5px 11px}
+.store::after{content:"›";margin-left:6px;font-size:15px;line-height:1}
+.is-ios .store.play,.is-android .store.ios{display:none}

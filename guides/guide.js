@@ -31,3 +31,22 @@
     });
   });
 })();
+
+/* App 下載按鈕：iPhone 只顯示 App Store、Android 只顯示 Google Play，並直接開啟商店 App */
+(function(){
+  var ua=navigator.userAgent||'';
+  var ios=/iPhone|iPad|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  var android=/Android/.test(ua);
+  var root=document.documentElement;
+  if(ios){
+    root.classList.add('is-ios');
+    document.querySelectorAll('a[data-ios]').forEach(function(a){
+      a.href='itms-apps://apps.apple.com/app/id'+a.dataset.ios; a.removeAttribute('target');
+    });
+  }else if(android){
+    root.classList.add('is-android');
+    document.querySelectorAll('a[data-play]').forEach(function(a){
+      a.href='market://details?id='+a.dataset.play; a.removeAttribute('target');
+    });
+  }
+})();
