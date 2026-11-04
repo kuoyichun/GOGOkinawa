@@ -137,3 +137,18 @@ a:focus-visible{outline:3px solid var(--lagoon);outline-offset:2px}
 .next a{display:flex;justify-content:space-between;align-items:center;background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:14.5px}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 退稅系統對照表 */
+.tbl.sys td{vertical-align:top;font-size:13.5px;line-height:1.5}
+.tbl.sys td:first-child{white-space:nowrap}
+.tbl.sys td small{display:block;font-size:11px;font-weight:500;color:var(--ink-soft)}
+.tbl.sys td:last-child{font-size:12.5px;color:var(--ink-soft)}
+.tbl.sys td.ok{color:var(--ok);font-weight:700}
+@media (max-width:420px){.tbl.sys th,.tbl.sys td{padding:8px 7px}}
+
+/* 時間點標籤 */
+.when{display:inline-block;font-size:12px;font-weight:900;border-radius:999px;padding:2px 10px;margin-top:20px;background:var(--ink);color:#fff}
+.when.land{background:var(--lagoon)}
+.when.trip{background:var(--sand);color:var(--ink)}
+.when.home{background:var(--coral)}
+.path{display:inline;font-size:13px;font-weight:700;color:var(--ink);background:var(--sand);border-radius:4px;padding:1px 6px;line-height:1.9}
