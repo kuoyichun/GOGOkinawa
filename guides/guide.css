@@ -189,3 +189,4 @@ a:focus-visible{outline:3px solid var(--lagoon);outline-offset:2px}
 .li-img{display:block;width:150px;height:auto;margin-top:6px;border-radius:8px;border:1px solid var(--line)}
 .dl-b .store.web+.store{margin-left:0}
 .fig a.zoom{display:block;border:0}
+.fig.shot img{max-width:320px;margin:6px 0 0}
