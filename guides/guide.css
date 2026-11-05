@@ -182,3 +182,10 @@ a:focus-visible{outline:3px solid var(--lagoon);outline-offset:2px}
 .fuel{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:1px}
 .fuel.r{background:#D93A2F}.fuel.y{background:#E8B820}.fuel.g{background:#2E8B4A}
 @media (max-width:420px){.tbl.fuelw th,.tbl.fuelw td{padding:8px 7px;font-size:13px}}
+
+/* 圖片 */
+.fig{margin:12px 0 0}
+.fig img{display:block;width:100%;max-width:480px;height:auto;margin:0 auto;border-radius:10px;border:1px solid var(--line);background:#fff}
+.li-img{display:block;width:150px;height:auto;margin-top:6px;border-radius:8px;border:1px solid var(--line)}
+.dl-b .store.web+.store{margin-left:0}
+.fig a.zoom{display:block;border:0}
