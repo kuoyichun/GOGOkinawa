@@ -175,3 +175,10 @@ a:focus-visible{outline:3px solid var(--lagoon);outline-offset:2px}
 /* 高速公路示意圖 */
 .hwmap{margin-top:10px;background:#BFE3EA;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .hwmap svg{display:block;width:100%;height:auto}
+
+/* 加油站常見字 */
+.tbl.fuelw td{vertical-align:top;font-size:13.5px;line-height:1.5}
+.tbl.fuelw td:first-child{white-space:nowrap}
+.fuel{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.fuel.r{background:#D93A2F}.fuel.y{background:#E8B820}.fuel.g{background:#2E8B4A}
+@media (max-width:420px){.tbl.fuelw th,.tbl.fuelw td{padding:8px 7px;font-size:13px}}
