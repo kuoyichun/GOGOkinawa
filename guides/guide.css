@@ -171,4 +171,7 @@ a:focus-visible{outline:3px solid var(--lagoon);outline-offset:2px}
 .store::after{content:"›";margin-left:6px;font-size:15px;line-height:1}
 .is-ios .store.play,.is-android .store.ios{display:none}
 .steps .store{margin-top:7px}
-.tbl.ic td:first-child{white-space:nowrap}
+
+/* 高速公路示意圖 */
+.hwmap{margin-top:10px;background:#BFE3EA;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.hwmap svg{display:block;width:100%;height:auto}
